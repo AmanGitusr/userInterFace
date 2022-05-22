@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+      android:layout_centerHorizontal="true"
+        android:text="\t\t\t Welcome To My Application \t\t\t"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:id="@+id/txtWel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you like ?\t\t\t\t\t"
+        android:layout_below="@+id/txtWel"
+        android:id="@+id/txtLike"
+
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"/>
+
+    <CheckBox
+        android:id="@+id/chckCoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLike"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Coffee" />
+
+    <CheckBox
+        android:id="@+id/chckTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLike"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/chckCoff"
+        android:text="Tea With Ginger" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLike"
+        android:layout_toRightOf="@+id/chckTea"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Chocolate Milk"
+        android:id="@+id/chckMilk"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chckTea"
+        android:layout_marginStart="20dp"
+        android:text="Cats"
+        android:id="@+id/chckCt" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chckTea"
+        android:layout_toRightOf="@+id/chckCt"
+        android:layout_marginStart="35dp"
+        android:text="Dogs"
+        android:id="@+id/chckDg"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chckTea"
+        android:layout_toRightOf="@+id/chckDg"
+        android:layout_marginStart="85dp"
+        android:text="Squirrel"
+        android:id="@+id/chckSqrl" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chckCt"
+        android:layout_marginStart="20dp"
+        android:text="Adventure"
+        android:id="@+id/chckAdvs"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chckDg"
+        android:layout_toRightOf="@+id/chckAdvs"
+        android:text="Swimming"
+        android:id="@+id/chckSwmg"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chckDg"
+        android:layout_toRightOf="@+id/chckSwmg"
+        android:layout_marginStart="52dp"
+        android:text="Singing"
+        android:id="@+id/chckSng"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chckSwmg"
+            android:layout_marginTop="40dp"
+            android:text="What do you think about this app ?"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:id="@+id/txtOpn"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOpn"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:id="@+id/rdgOpn">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good\t\t"
+            android:id="@+id/rbGd"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="That's Fine"
+            android:layout_marginStart="20dp"
+            android:id="@+id/rbTfn"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Keep Growing Up😸"
+            android:id="@+id/rbKg"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdgOpn"
+        android:text="\t\t\t\tPress\t\t\t\t"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btnPrs"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPrs"
+        android:text="Don't Talk Just Act 😉"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="italic|bold|normal"
+        android:id="@+id/txtQut"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
